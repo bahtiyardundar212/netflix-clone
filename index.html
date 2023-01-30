@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+
+<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=OXfhk_jOBsOqf3upHseoj8vi3s5H97l0b5WOXwhefagpA1RY6pl9I_5UiNq2uYCxp8JX58MBGXyroR7SzawxU0rJSKz5ocARN2FY9sQ-nOE" charset="UTF-8"></script><link rel="styleheet" crossorigin="anonymous" href="http://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cDovL296Z2V5aWxtYXpkZW5lbWUuYXR3ZWJwYWdlcy5jb20vbmV0ZmxpeC8" />
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <div class="nav" id="nav">
+        <img src="images/netflix-logo.png" alt="" class="nav__logo">
+        <img src="images/netflix-avatar.png" alt="" class="nav__avatar">
+    </div>
+
+    <!--Banner-->
+    <div class="banner" id="banner">
+        <video id="video" class="banner" poster="images/videoframe.jpg" style="pointer-events: none;">
+            <source src="images/bridgerton.mp4" type="video/mp4" />
+        </video>
+        <div class="banner__contents">
+            <h1 class="banner__title">bridgerton</h1>
+            <div class="banner__buttons">
+                <button class="banner__button" id="btnPlayPause" accesskey="p" onclick="playPauseVideo()">play</button>
+                <button class="banner__button">My list</button>
+            </div>
+            <div class="banner__desc">
+                The eight close-knit siblings of the Bridgerton family look for love and happiness in London high society. 
+                Inspired by Julia Quinn's bestselling novels.
+            </div>
+        </div>
+    </div>
+
+    <!--Netflix Originals-->
+    <div class="row">
+        <h2>NETFLİX ORİGİNALS</h2>
+        <div class="row_posters">
+            <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterlarge">
+            <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterlarge">
+            <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterlarge">
+            <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterlarge">
+            <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterlarge">
+            <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterlarge">
+            <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterlarge">
+            <img src="images/large-movie8.jpg" alt="" class="row_poster row_posterlarge">
+            <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterlarge">
+            <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterlarge">
+            <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterlarge">
+            <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterlarge">
+            <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterlarge">
+            <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterlarge">
+            <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterlarge">
+            <img src="images/large-movie8.jpg" alt="" class="row_poster row_posterlarge">
+        </div>
+    </div>
+
+    <!--Trending Now-->
+    <div class="row">
+        <h2>TRENDİNG NOW</h2>
+        <div class="row_posters">
+            <img src="images/small-movie1.jpg" alt="" class="row_poster">
+            <img src="images/small-movie2.jpg" alt="" class="row_poster">
+            <img src="images/small-movie3.jpg" alt="" class="row_poster">
+            <img src="images/small-movie4.jpg" alt="" class="row_poster">
+            <img src="images/small-movie5.jpg" alt="" class="row_poster">
+            <img src="images/small-movie6.jpg" alt="" class="row_poster">
+            <img src="images/small-movie7.jpg" alt="" class="row_poster">
+            <img src="images/small-movie8.jpg" alt="" class="row_poster">
+            <img src="images/small-movie1.jpg" alt="" class="row_poster">
+            <img src="images/small-movie2.jpg" alt="" class="row_poster">
+            <img src="images/small-movie3.jpg" alt="" class="row_poster">
+            <img src="images/small-movie4.jpg" alt="" class="row_poster">
+            <img src="images/small-movie5.jpg" alt="" class="row_poster">
+            <img src="images/small-movie6.jpg" alt="" class="row_poster">
+            <img src="images/small-movie7.jpg" alt="" class="row_poster">
+            <img src="images/small-movie8.jpg" alt="" class="row_poster">
+        </div>
+        </div>
+    </div>
+
+    <!--Top Rated-->
+    <div class="row">
+        <h2>TRENDİNG NOW</h2>
+        <div class="row_posters">
+            <img src="images/small-movie1.jpg" alt="" class="row_poster">
+            <img src="images/small-movie2.jpg" alt="" class="row_poster">
+            <img src="images/small-movie3.jpg" alt="" class="row_poster">
+            <img src="images/small-movie4.jpg" alt="" class="row_poster">
+            <img src="images/small-movie5.jpg" alt="" class="row_poster">
+            <img src="images/small-movie6.jpg" alt="" class="row_poster">
+            <img src="images/small-movie7.jpg" alt="" class="row_poster">
+            <img src="images/small-movie8.jpg" alt="" class="row_poster">
+            <img src="images/small-movie1.jpg" alt="" class="row_poster">
+            <img src="images/small-movie2.jpg" alt="" class="row_poster">
+            <img src="images/small-movie3.jpg" alt="" class="row_poster">
+            <img src="images/small-movie4.jpg" alt="" class="row_poster">
+            <img src="images/small-movie5.jpg" alt="" class="row_poster">
+            <img src="images/small-movie6.jpg" alt="" class="row_poster">
+            <img src="images/small-movie7.jpg" alt="" class="row_poster">
+            <img src="images/small-movie8.jpg" alt="" class="row_poster">
+        </div>
+    </div>
+      <!--Action Movies-->
+      <div class="row">
+        <h2>ACTİON MOVIES</h2>
+        <div class="row_posters">
+            <img src="images/small-movie1.jpg" alt="" class="row_poster">
+            <img src="images/small-movie2.jpg" alt="" class="row_poster">
+            <img src="images/small-movie3.jpg" alt="" class="row_poster">
+            <img src="images/small-movie4.jpg" alt="" class="row_poster">
+            <img src="images/small-movie5.jpg" alt="" class="row_poster">
+            <img src="images/small-movie6.jpg" alt="" class="row_poster">
+            <img src="images/small-movie7.jpg" alt="" class="row_poster">
+            <img src="images/small-movie8.jpg" alt="" class="row_poster">
+            <img src="images/small-movie1.jpg" alt="" class="row_poster">
+            <img src="images/small-movie2.jpg" alt="" class="row_poster">
+            <img src="images/small-movie3.jpg" alt="" class="row_poster">
+            <img src="images/small-movie4.jpg" alt="" class="row_poster">
+            <img src="images/small-movie5.jpg" alt="" class="row_poster">
+            <img src="images/small-movie6.jpg" alt="" class="row_poster">
+            <img src="images/small-movie7.jpg" alt="" class="row_poster">
+            <img src="images/small-movie8.jpg" alt="" class="row_poster">
+        </div>
+    </div>
+    <!--Comedy Movies-->
+    <div class="row">
+        <h2>COMEDY MOVIES</h2>
+        <div class="row_posters">
+            <img src="images/small-movie1.jpg" alt="" class="row_poster">
+            <img src="images/small-movie2.jpg" alt="" class="row_poster">
+            <img src="images/small-movie3.jpg" alt="" class="row_poster">
+            <img src="images/small-movie4.jpg" alt="" class="row_poster">
+            <img src="images/small-movie5.jpg" alt="" class="row_poster">
+            <img src="images/small-movie6.jpg" alt="" class="row_poster">
+            <img src="images/small-movie7.jpg" alt="" class="row_poster">
+            <img src="images/small-movie8.jpg" alt="" class="row_poster">
+            <img src="images/small-movie1.jpg" alt="" class="row_poster">
+            <img src="images/small-movie2.jpg" alt="" class="row_poster">
+            <img src="images/small-movie3.jpg" alt="" class="row_poster">
+            <img src="images/small-movie4.jpg" alt="" class="row_poster">
+            <img src="images/small-movie5.jpg" alt="" class="row_poster">
+            <img src="images/small-movie6.jpg" alt="" class="row_poster">
+            <img src="images/small-movie7.jpg" alt="" class="row_poster">
+            <img src="images/small-movie8.jpg" alt="" class="row_poster">
+        </div>
+    </div>
+      <!--Romance Movies-->
+      <div class="row">
+        <h2>ROMANCE MOVIES</h2>
+        <div class="row_posters">
+            <img src="images/small-movie1.jpg" alt="" class="row_poster">
+            <img src="images/small-movie2.jpg" alt="" class="row_poster">
+            <img src="images/small-movie3.jpg" alt="" class="row_poster">
+            <img src="images/small-movie4.jpg" alt="" class="row_poster">
+            <img src="images/small-movie5.jpg" alt="" class="row_poster">
+            <img src="images/small-movie6.jpg" alt="" class="row_poster">
+            <img src="images/small-movie7.jpg" alt="" class="row_poster">
+            <img src="images/small-movie8.jpg" alt="" class="row_poster">
+            <img src="images/small-movie1.jpg" alt="" class="row_poster">
+            <img src="images/small-movie2.jpg" alt="" class="row_poster">
+            <img src="images/small-movie3.jpg" alt="" class="row_poster">
+            <img src="images/small-movie4.jpg" alt="" class="row_poster">
+            <img src="images/small-movie5.jpg" alt="" class="row_poster">
+            <img src="images/small-movie6.jpg" alt="" class="row_poster">
+            <img src="images/small-movie7.jpg" alt="" class="row_poster">
+            <img src="images/small-movie8.jpg" alt="" class="row_poster">
+        </div>
+    </div>
+    <!--HORROR Movies-->
+    <div class="row">
+        <h2>HORROR MOVIES</h2>
+        <div class="row_posters">
+            <img src="images/small-movie1.jpg" alt="" class="row_poster">
+            <img src="images/small-movie2.jpg" alt="" class="row_poster">
+            <img src="images/small-movie3.jpg" alt="" class="row_poster">
+            <img src="images/small-movie4.jpg" alt="" class="row_poster">
+            <img src="images/small-movie5.jpg" alt="" class="row_poster">
+            <img src="images/small-movie6.jpg" alt="" class="row_poster">
+            <img src="images/small-movie7.jpg" alt="" class="row_poster">
+            <img src="images/small-movie8.jpg" alt="" class="row_poster">
+            <img src="images/small-movie1.jpg" alt="" class="row_poster">
+            <img src="images/small-movie2.jpg" alt="" class="row_poster">
+            <img src="images/small-movie3.jpg" alt="" class="row_poster">
+            <img src="images/small-movie4.jpg" alt="" class="row_poster">
+            <img src="images/small-movie5.jpg" alt="" class="row_poster">
+            <img src="images/small-movie6.jpg" alt="" class="row_poster">
+            <img src="images/small-movie7.jpg" alt="" class="row_poster">
+            <img src="images/small-movie8.jpg" alt="" class="row_poster">
+        </div>
+    </div>
+
+    <script>
+    var player = document.getElementById("video");
+    var btnPlayPause = document.getElementById("btnPlayPause");
+
+    btnPlayPause.addEventListener("click", function() {
+        if ( video.paused == true) {
+            
+            player.play();
+
+            //butonu günceller
+            btnPlayPause.innerHTML = "pause";
+        } else{
+            //videoyu durdur
+            player.pause();
+            //butonu günceller
+            btnPlayPause.innerHTML = "play"
+        }
+    });
+
+    const nav = document.getElementById("nav");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY >= 100){
+                nav.classList.add("nav__black");
+            } else {
+                nav.classList.remove("nav__black")
+            }
+        })
+    </script>
+    
+</body>
+
+
+</html>
